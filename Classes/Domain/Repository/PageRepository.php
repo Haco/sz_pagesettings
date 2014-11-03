@@ -34,13 +34,14 @@
 class PageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
 	public function findByPid($pid) {
+		$query = $this->createQuery();
+
+		/** @var \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings $querySettings */
 		$querySettings = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
 		$querySettings->setRespectStoragePage(FALSE);
 		$this->setDefaultQuerySettings($querySettings);
-		$query = $this->createQuery();
-		$query->matching($query->equals('pid', $pid));
-		$pages = $query->execute();
-		return $pages;
+
+		return $query->matching($query->equals('pid', $pid))->execute();
 	}
 }
 ?>

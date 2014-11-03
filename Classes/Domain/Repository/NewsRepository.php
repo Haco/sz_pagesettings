@@ -11,19 +11,16 @@ class NewsRepository extends Tx_News_Domain_Repository_CategoryRepository {
 	 * @return \TYPO3\CMS\Extbase\Persistence\QueryInterface
 	 */
 	public function findByIdList(array $idList, array $ordering = array()) {
-		echo "overriting!";
+		/** @var \TYPO3\CMS\Extbase\Persistence\QueryInterface $query */
 		$query = $this->createQuery();
 		$query->getQuerySettings()->setRespectStoragePage(FALSE);
 
-		if (count($ordering) > 0) {
+		if ( count($ordering) ) {
 			$query->setOrderings($ordering);
 		}
 //		$this->overlayTranslatedCategoryIds($idList);
 
-		return $query->matching(
-			$query->logicalAnd(
-				$query->in('uid', $idList)
-			))->execute();
+		return $query->matching($query->in('uid', $idList))->execute();
 	}
 
 }

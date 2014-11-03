@@ -38,14 +38,7 @@ class Page extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 *
 	 * @var string
 	 */
-	protected $title;
-
-	/**
-	 * title
-	 *
-	 * @var \Ecom\SzPagesettings\Domain\Model\Page;
-	 */
-	protected $subpages;
+	protected $title = '';
 
 	/**
 	 * @param string $title

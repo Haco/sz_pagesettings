@@ -37,27 +37,27 @@ class News extends Tx_News_Domain_Model_News {
 	/**
 	 * News Comments
 	 *
-	 * @var integer
+	 * @var bool
 	 */
-	protected $newscomments;
+	protected $newsComments = FALSE;
 
 	/**
 	 * Returns the technicalData
 	 *
-	 * @return integer $newscomments
+	 * @return bool $newsComments
 	 */
-	public function getNewscomments() {
-		return $this->newscomments;
+	public function getNewsComments() {
+		return $this->newsComments;
 	}
 
 	/**
-	 * Sets the newscomments
+	 * Sets the newsComments
 	 *
-	 * @param integer $newscomments
+	 * @param bool $newsComments
 	 * @return void
 	 */
-	public function setNewscomments($newscomments) {
-		$this->newscomments = $newscomments;
+	public function setNewsComments($newsComments) {
+		$this->newsComments = $newsComments;
 	}
 
 }

@@ -1,5 +1,6 @@
 <?php
-	namespace Ecom\SzPagesettings\ViewHelpers;
+namespace Ecom\SzPagesettings\ViewHelpers;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -23,9 +24,8 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-	use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-	/**
+/**
  * This view helper handles parameter strings using typolink function of TYPO3.
  * It returns just the URL.
  *
@@ -41,17 +41,16 @@ class LanguageViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHe
 	 * @return string url
 	 */
 	public function render($languageId) {
-
 		$parameter = $GLOBALS['TSFE']->id;
 		$urlParameters = array(
 			'L' => $languageId
 		);
 
-		/** @var $cObj tslib_cObj */
-		$cObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('tslib_cObj');
+		/** @var \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer $cObj */
+		$cObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Frontend\\ContentObject\\ContentObjectRenderer');
 		$typoLink = $cObj->getTypoLink_URL($parameter, $urlParameters, '_self');
 
-		$text = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('lang.lang-' . $languageId, 'SzPagesettings');
+		$text = \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('lang.lang-' . $languageId, 'sz_pagesettings');
 
 		if ($GLOBALS['TSFE']->sys_language_uid == $languageId) {
 			$content = '<a class="greyscale active lang-' . $languageId . '" href="' . $typoLink . '">' . $text . '</a>';

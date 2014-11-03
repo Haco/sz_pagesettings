@@ -49,5 +49,5 @@ CREATE TABLE tt_address (
 # Table structure for table 'tx_news_domain_model_news'
 #
 CREATE TABLE tx_news_domain_model_news (
-	newscomments int(11) DEFAULT '0' NOT NULL
+	news_comments int(11) DEFAULT '0' NOT NULL
 );

@@ -38,7 +38,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:11:{s:9:"ChangeLog";s:4:"7f0a";s:12:"ext_icon.gif";s:4:"e922";s:17:"ext_localconf.php";s:4:"b292";s:14:"ext_tables.php";s:4:"78b2";s:14:"ext_tables.sql";s:4:"92ce";s:16:"locallang_db.xml";s:4:"55a8";s:29:"Classes/Domain/Model/Page.php";s:4:"5929";s:44:"Classes/Domain/Repository/PageRepository.php";s:4:"da3b";s:34:"Configuration/TypoScript/setup.txt";s:4:"525b";s:31:"Tests/Domain/Model/PageTest.php";s:4:"563d";s:46:"Tests/Domain/Repository/PageRepositoryTest.php";s:4:"db53";}',
+	'_md5_values_when_last_written' => '',
 	'suggests' => array(
 	),
 );

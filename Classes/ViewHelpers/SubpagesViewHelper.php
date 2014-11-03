@@ -1,5 +1,6 @@
 <?php
-	namespace Ecom\SzPagesettings\ViewHelpers;
+namespace Ecom\SzPagesettings\ViewHelpers;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -34,28 +35,11 @@
 class SubpagesViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
 
 	/**
-	 * languageRepository
-	 *
-	 * @var \Ecom\SzPagesettings\Domain\Repository\PageRepository
-	 * @inject
-	 */
-	protected $pageRepository;
-
-	/**
-	 * t3lib_queryGenerator is needed to recursively fetch a page tree
-	 *
-	 * @var \TYPO3\CMS\Core\Database\QueryGenerator
-	 * @inject
-	 */
-	protected $queryGenerator;
-
-
-	/**
 	 * Create a typolink with the given language.
 	 *
 	 * @param integer $pageId ID of the page
 	 * @param integer $level
-	 * @return array pages
+	 * @return array
 	 */
 	public function render($pageId, $level = 2) {
 		$pageTree = $this->getPageTree($pageId);
@@ -64,35 +48,16 @@ class SubpagesViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHe
 	}
 
 	/**
-	 * @param int $pageUid Ausgangspunkt / Root page
-	 * @param array $pageTree
-	 * @return array
-	 *
-	protected function getPageTree($pageUid = 1, $pageTree = array()) {
-
-		$this->pageSelect = new t3lib_pageSelect();
-		$this->pageSelect->init(TRUE);
-
-		$pageTree = $this->pageSelect->getMenu($pageUid);
-		foreach($pageTree as &$page) {
-			$page['subPages'] = $this->getPageTree($page['uid'], $pageTree);
-		}
-
-		return $pageTree;
-	}
-*/
-
-	/**
-	 * @param int $pageUid Ausgangspunkt / Root page
-	 * @param array $pageTree
+	 * @param  integer $pageUid Ausgangspunkt / Root page
+	 * @param  array   $pageTree
 	 * @return array
 	 */
-	protected function getPageTree($pageUid = 1, $pageTree = array()) {
-		/** @var \TYPO3\CMS\Frontend\Page\PageRepository pageSelect */
-		$this->pageSelect = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Frontend\\Page\\PageRepository');
-		$this->pageSelect->init(TRUE);
+	protected function getPageTree($pageUid = 1, array $pageTree = array()) {
+		/** @var \TYPO3\CMS\Frontend\Page\PageRepository $pageSelect */
+		$pageSelect = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Frontend\\Page\\PageRepository');
+		$pageSelect->init(TRUE);
 
-		$pageTree = $this->pageSelect->getMenu($pageUid);
+		$pageTree = $pageSelect->getMenu($pageUid);
 		foreach($pageTree as &$page) {
 			$page['subPages'] = $this->getPageTree($page['uid'], $pageTree);
 		}

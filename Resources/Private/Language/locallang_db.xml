@@ -39,7 +39,7 @@
 			<label index="tx_szpagesettings_proudctZone">Zone</label>
 			<label index="tx_szpagesettings_proudctDivision">Division</label>
 			<label index="tx_szpagesettings_forceDownload">Downloadlink erzwingen</label>
-			<label index="newscomments">Kommentare aktivieren</label>
+			<label index="news_comments">Kommentare aktivieren</label>
 		</languageKey>
 	</data>
 </T3locallang>

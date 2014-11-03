@@ -222,9 +222,9 @@ $newContentColumns = array (
 );
 
 $newNewsColumns = array(
-	"newscomments" => Array (
+	"news_comments" => Array (
 		"exclude" => 1,
-		"label" => "LLL:EXT:sz_pagesettings/Resources/Private/Language/locallang_db.xml:newscomments",
+		"label" => "LLL:EXT:sz_pagesettings/Resources/Private/Language/locallang_db.xml:news_comments",
 		"config" => Array (
 			"type" => "check",
 		),
@@ -233,6 +233,7 @@ $newNewsColumns = array(
 // PAGES
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $newPagesColumns, 1);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages_language_overlay', $newPagesColumns, 1);
+
 // TCA Palettes
 $TCA['pages']['palettes']['tx_szpagesettings'] = array(
 	'showitem'			=> 'tx_szpagesettings_footerDesc, tx_szpagesettings_hideFooterDesc, tx_szpagesettings_productImg, tx_szpagesettings_productCancelled, tx_szpagesettings_productZone, tx_szpagesettings_productDivision, subnav_title, tx_szpagesettings_teaserHeadline, tx_szpagesettings_teaserTxt, tx_szpagesettings_teaserImg, tx_szpagesettings_teaserLink, tx_szpagesettings_teaserLinktxt,tx_szpagesettings_pageIcon',
@@ -242,6 +243,7 @@ $TCA['pages_language_overlay']['palettes']['tx_szpagesettings'] = array(
 	'showitem'			=> 'tx_szpagesettings_footerDesc, tx_szpagesettings_hideFooterDesc,  tx_szpagesettings_productImg, tx_szpagesettings_productCancelled, tx_szpagesettings_productZone, tx_szpagesettings_productDivision, subnav_title, tx_szpagesettings_teaserHeadline, tx_szpagesettings_teaserTxt, tx_szpagesettings_teaserImg, tx_szpagesettings_teaserLink, tx_szpagesettings_teaserLinktxt,tx_szpagesettings_pageIcon',
 	'canNotCollapse'	=> 1
 );
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'tx_szpagesettings_hideFooterDesc, tx_szpagesettings_footerDesc;;4;richtext:rte_transform[flag=rte_enabled|mode=ts], tx_szpagesettings_productImg, tx_szpagesettings_productCancelled, tx_szpagesettings_productZone, tx_szpagesettings_productDivision,--div--;Teaser;,tx_szpagesettings_teaserHeadline, tx_szpagesettings_teaserTxt;;4;richtext:rte_transform[flag=rte_enabled|mode=ts], tx_szpagesettings_teaserImg, tx_szpagesettings_teaserLink, tx_szpagesettings_teaserLinktxt,tx_szpagesettings_pageIcon');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', 'tx_szpagesettings_hideFooterDesc, tx_szpagesettings_footerDesc;;4;richtext:rte_transform[flag=rte_enabled|mode=ts], tx_szpagesettings_productImg, tx_szpagesettings_productCancelled, tx_szpagesettings_productZone, tx_szpagesettings_productDivision,--div--;Teaser;,tx_szpagesettings_teaserHeadline, tx_szpagesettings_teaserTxt;;4;richtext:rte_transform[flag=rte_enabled|mode=ts], tx_szpagesettings_teaserImg, tx_szpagesettings_teaserLink, tx_szpagesettings_teaserLinktxt,tx_szpagesettings_pageIcon');
 
@@ -271,7 +273,7 @@ $TCA['tt_content']['palettes']['sz_pagesettings'] = array(
 	'canNotCollapse' => 1
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news','newscomments');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news','news_comments');
 
 
 ?>
