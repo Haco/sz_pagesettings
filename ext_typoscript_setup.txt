@@ -1,0 +1,11 @@
+config.tx_extbase {
+    persistence {
+        classes {
+			Ecom\SzPagesettings\Domain\Model\Page {
+			 	mapping {
+					tableName = pages
+				}
+			}
+    	}
+    }
+}

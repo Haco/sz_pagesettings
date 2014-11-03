@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'sz_pagesettings'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_szpagesettings_teaserTxt">Teaser Text</label>
+			<label index="tx_szpagesettings_teaserHeadline">Teaser Headline</label>
+			<label index="tx_szpagesettings_teaserImg">Teaser Image</label>
+			<label index="tx_szpagesettings_teaserLink">Teaser Link</label>
+			<label index="tx_szpagesettings_teaserLinktxt">Teaser Linktext</label>
+			<label index="tx_szpagesettings_pageIcon">Iconklasse</label>
+			<label index="tx_szpagesettings_footerDesc">Pagedescription - Footer</label>
+			<label index="tx_szpagesettings_hideFooterDesc">Pagedescription - Hide footer</label>
+			<label index="tx_szpagesettings_moreLink">More-link</label>
+			<label index="tx_szpagesettings_moreText">More-link text</label>
+			<label index="tx_szpagesettings_productImg">Product-Image</label>
+			<label index="tx_szpagesettings_productCancelled">Cancelled product?</label>
+			<label index="tx_szpagesettings_proudctZone">Zone</label>
+			<label index="tx_szpagesettings_proudctDivision">Division</label>
+			<label index="tx_szpagesettings_forceDownload">Force Downloadlink</label>
+			<label index="newscomments">Show Comments</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_szpagesettings_teaserTxt">Teaser Text</label>
+			<label index="tx_szpagesettings_teaserHeadline">Teaser Überschrift</label>
+			<label index="tx_szpagesettings_teaserImg">Teaser Bild</label>
+			<label index="tx_szpagesettings_teaserLink">Teaser Link</label>
+			<label index="tx_szpagesettings_teaserLinktxt">Teaser Linktext</label>
+			<label index="tx_szpagesettings_pageIcon">Iconklasse</label>
+			<label index="tx_szpagesettings_footerDesc">Seitenbeschreibung - Footer</label>
+			<label index="tx_szpagesettings_hideFooterDesc">Seitenbeschreibung - Footer verstecken</label>
+			<label index="tx_szpagesettings_moreLink">Mehr-Link Text</label>
+			<label index="tx_szpagesettings_moreText">Mehr Link</label>
+			<label index="tx_szpagesettings_productImg">Produktbild</label>
+			<label index="tx_szpagesettings_productCancelled">Abgekündigtes Produkt?</label>
+			<label index="tx_szpagesettings_proudctZone">Zone</label>
+			<label index="tx_szpagesettings_proudctDivision">Division</label>
+			<label index="tx_szpagesettings_forceDownload">Downloadlink erzwingen</label>
+			<label index="newscomments">Kommentare aktivieren</label>
+		</languageKey>
+	</data>
+</T3locallang>

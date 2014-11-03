@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Downloadcenter extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="lang.lang-2">français</label>
+			<label index="lang.lang-3">español</label>
+			<label index="lang.lang-4">ру́сски</label>
+			<label index="lang.lang-5">português</label>
+			<label index="lang.lang-6">english</label>
+			<label index="lang.lang-6">english</label>
+			<label index="lang.lang-7">deutsch</label>
+			<label index="lang.lang-8">nederlands</label>
+		</languageKey>
+	</data>
+</T3locallang>
