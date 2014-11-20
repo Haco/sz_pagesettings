@@ -27,6 +27,7 @@ CREATE TABLE pages_language_overlay (
 	tx_szpagesettings_teaserLinktxt varchar(255) DEFAULT '' NOT NULL,
 	tx_szpagesettings_pageIcon varchar(255) DEFAULT '' NOT NULL,
 	tx_szpagesettings_footerDesc text,
+	tx_szpagesettings_hideFooterDesc tinyint(1) DEFAULT '0' NOT NULL,
 	tx_szpagesettings_productImg varchar(255) DEFAULT '' NOT NULL,
 	tx_szpagesettings_productCancelled int(1) DEFAULT '0' NOT NULL,
 	tx_szpagesettings_productZone varchar(255) DEFAULT '' NOT NULL,
