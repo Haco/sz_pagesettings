@@ -21,7 +21,7 @@
 			<label index="tx_szpagesettings_proudctZone">Zone</label>
 			<label index="tx_szpagesettings_proudctDivision">Division</label>
 			<label index="tx_szpagesettings_forceDownload">Force Downloadlink</label>
-			<label index="newscomments">Show Comments</label>
+			<label index="news_comments">Show Comments</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="tx_szpagesettings_teaserTxt">Teaser Text</label>
