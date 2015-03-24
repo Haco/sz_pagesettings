@@ -1,7 +1,7 @@
 <?php
 	namespace Ecom\SzPagesettings\Domain\Repository;
 
-class NewsRepository extends Tx_News_Domain_Repository_CategoryRepository {
+	class NewsRepository extends Tx_News_Domain_Repository_CategoryRepository {
 
 	/**
 	 * Find categories by a given pid
@@ -18,11 +18,7 @@ class NewsRepository extends Tx_News_Domain_Repository_CategoryRepository {
 		if ( count($ordering) ) {
 			$query->setOrderings($ordering);
 		}
-//		$this->overlayTranslatedCategoryIds($idList);
-
+		// $this->overlayTranslatedCategoryIds($idList);
 		return $query->matching($query->in('uid', $idList))->execute();
 	}
-
 }
-
-?>

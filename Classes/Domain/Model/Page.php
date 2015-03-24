@@ -25,11 +25,8 @@ namespace Ecom\SzPagesettings\Domain\Model;
  ***************************************************************/
 
 /**
- *
- *
  * @package SzViewhelpers
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- *
  */
 class Page extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 
@@ -55,4 +52,3 @@ class Page extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	}
 
 }
-?>

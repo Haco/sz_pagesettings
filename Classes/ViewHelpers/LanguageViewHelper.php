@@ -61,4 +61,3 @@ class LanguageViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHe
 		return $content;
 	}
 }
-?>

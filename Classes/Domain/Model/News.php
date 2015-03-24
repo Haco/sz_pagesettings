@@ -26,11 +26,8 @@ namespace Ecom\SzPagesettings\Domain\Model;
  ***************************************************************/
 
 /**
- *
- *
  * @package SzPagesettings
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- *
  */
 class News extends Tx_News_Domain_Model_News {
 
@@ -61,4 +58,3 @@ class News extends Tx_News_Domain_Model_News {
 	}
 
 }
-?>

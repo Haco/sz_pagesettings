@@ -1,5 +1,5 @@
 <?php
-	namespace Ecom\SzPagesettings\Domain\Repository;
+namespace Ecom\SzPagesettings\Domain\Repository;
 
 /***************************************************************
  *  Copyright notice
@@ -25,11 +25,8 @@
  ***************************************************************/
 
 /**
- *
- *
  * @package SzViewhelpers
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- *
  */
 class PageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
@@ -44,4 +41,3 @@ class PageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 		return $query->matching($query->equals('pid', $pid))->execute();
 	}
 }
-?>

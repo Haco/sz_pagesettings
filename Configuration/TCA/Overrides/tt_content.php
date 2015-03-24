@@ -1,5 +1,4 @@
 <?php
-
 $newContentColumns = array (
 	'tx_szpagesettings_moreLink' => array (
 		'exclude' => 1,

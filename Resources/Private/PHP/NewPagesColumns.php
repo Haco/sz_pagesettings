@@ -67,6 +67,18 @@ $newPagesColumns = array (
 			'eval' => 'trim',
 		),
 	),
+	'tx_szpagesettings_teaserImgFal' => array(
+		'exclude' => 1,
+		'l10n_mode' => 'mergeIfNotBlank',
+		'label' => 'Teaser Image (FAL)',
+		'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('tx_szpagesettings_teaserImgFal', array(
+			'appearance' => array(
+				'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
+			),
+			'minitems' => 0,
+			'maxitems' => 1,
+		), $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']),
+	),
 	'tx_szpagesettings_teaserImg' => array (
 		'exclude' => 1,
 		'label' => 'LLL:EXT:sz_pagesettings/Resources/Private/Language/locallang_db.xml:tx_szpagesettings_teaserImg',
@@ -81,6 +93,18 @@ $newPagesColumns = array (
 			"minitems" => 0,
 			"maxitems" => 1,
 		),
+	),
+	'tx_szpagesettings_productImgFal' => array(
+		'exclude' => 1,
+		'l10n_mode' => 'mergeIfNotBlank',
+		'label' => 'Product Image (FAL)',
+		'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('tx_szpagesettings_productImgFal', array(
+			'appearance' => array(
+				'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference'
+			),
+			'minitems' => 0,
+			'maxitems' => 1,
+		), $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']),
 	),
 	'tx_szpagesettings_productImg' => array (
 		'exclude' => 1,

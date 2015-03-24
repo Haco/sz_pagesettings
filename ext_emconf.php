@@ -1,5 +1,4 @@
 <?php
-
 ########################################################################
 # Extension Manager/Repository config file for ext "sz_pagesettings".
 #
@@ -14,9 +13,9 @@ $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Pagesettings',
 	'description' => 'Extends the page and content properties with new fields.',
 	'category' => 'plugin',
-	'author' => 'Armin Ruediger Vieweg',
-	'author_email' => 'armin.vieweg@sunzinet.com',
-	'author_company' => 'sunzinet AG',
+	'author' => 'Webmaster',
+	'author_email' => 'webmaster@ecom-ex.com',
+	'author_company' => 'ecom instruments GmbH',
 	'shy' => '',
 	'dependencies' => '',
 	'conflicts' => '',
@@ -29,7 +28,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => 'pages,tt_content',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.2.0',
+	'version' => '1.3.0',
 	'constraints' => array(
 		'depends' => array(
 		),
@@ -42,5 +41,3 @@ $EM_CONF[$_EXTKEY] = array(
 	'suggests' => array(
 	),
 );
-
-?>
