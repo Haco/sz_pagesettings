@@ -79,21 +79,6 @@ $newPagesColumns = array (
 			'maxitems' => 1,
 		), $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']),
 	),
-	'tx_szpagesettings_teaserImg' => array (
-		'exclude' => 1,
-		'label' => 'LLL:EXT:sz_pagesettings/Resources/Private/Language/locallang_db.xml:tx_szpagesettings_teaserImg',
-		'config' => array (
-			"type" => "group",
-			"internal_type" => "file",
-			"allowed" => "png,jpeg,jpg",
-			"max_size" => 1000,
-			"uploadfolder" => "uploads/navigationteaser",
-			"show_thumbs" => 1,
-			"size" => 1,
-			"minitems" => 0,
-			"maxitems" => 1,
-		),
-	),
 	'tx_szpagesettings_productImgFal' => array(
 		'exclude' => 1,
 		'l10n_mode' => 'mergeIfNotBlank',
@@ -105,21 +90,6 @@ $newPagesColumns = array (
 			'minitems' => 0,
 			'maxitems' => 1,
 		), $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']),
-	),
-	'tx_szpagesettings_productImg' => array (
-		'exclude' => 1,
-		'label' => 'LLL:EXT:sz_pagesettings/Resources/Private/Language/locallang_db.xml:tx_szpagesettings_productImg',
-		'config' => array (
-			"type" => "group",
-			"internal_type" => "file",
-			"allowed" => "png,jpeg,jpg",
-			"max_size" => 1000,
-			"uploadfolder" => "uploads/pics",
-			"show_thumbs" => 1,
-			"size" => 1,
-			"minitems" => 0,
-			"maxitems" => 1,
-		),
 	),
 	"tx_szpagesettings_productCancelled" => Array (
 		"exclude" => 1,
